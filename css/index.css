@@ -332,7 +332,7 @@ footer {
     padding: 20px 0 20px 0;
   }
   .walk .walk-text {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
   .walk .walk-text .btn {
@@ -345,10 +345,10 @@ footer {
     width: 100%;
     padding: 20px 10px;
   }
-  .walk .walk-text .walk-img {
-    width: 90%;
+  .walk .walk-img {
+    width: 100%;
     margin: inherit auto;
-    order: -1;
+    order: -2;
     margin-bottom: 20px;
   }
 }
