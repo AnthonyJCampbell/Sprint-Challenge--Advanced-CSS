@@ -1,6 +1,18 @@
 // Mixins Here
-.button(@bcolor, @radius, color) {
+.radius(@size) {
+    border-radius: @size;
+}
+
+.button(@bcolor, @radius, @color) {
     background-color: @bcolor;
     border-radius: @radius;
     color: @color;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+.button-hover(@bcolor, @color) {
+    background-color: @color;
+    color: @bcolor;
 }
