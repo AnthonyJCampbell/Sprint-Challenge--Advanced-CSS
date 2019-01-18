@@ -4,9 +4,11 @@
 
   .intro {
     img {
+      width: 100%;
       .radius(5px);
     }
-
+  
+    
     h2 {
       padding: 15px;
     }
@@ -15,6 +17,14 @@
       padding:0 15px;
     }
   
+  }
+
+  @media @phone {
+    .intro {
+      img {
+        width: 100%;
+      }
+    }
   }
 
   .space-images {
@@ -30,6 +40,17 @@
     }
   }
 
+  @media @phone {
+    .space-images {
+      .blast {
+        width: 100%;
+      }
+
+      .sky, .launch {
+        display: none;
+      }
+    }
+  }
   .visit-planets {
     padding: 15px;
 
