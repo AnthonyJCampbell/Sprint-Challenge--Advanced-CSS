@@ -33,14 +33,21 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+An adaptive website combines a mix of both the old and the new; it applies media queries to establish breakpoints for different screen sizes, but still uses absolute units to define its layout. It's considered to still be too rigid for seamless use on any device. Fully responsive websites use percentage-based values for defining web layouts. This ensures that, whatever the screen size, the content adapts to the exact height and width of the viewport.
 
 2. Describe what it means to be mobile first vs desktop first.
+Mobile first and desktop first are two terms that refer to differing approaches to styling a website. Simply put, it refers to what version of the site is the default in styling. For example, with desktop first, all non-media queried styling is done for a large desktop-sized browser window. Conversely, mobile first means that the developers have made the mobile version of their website the default and that styling for tablet and desktop versions is delivered via media queries.
+It should be noted that, now that mobile traffic accounts for more than 50% of all internet traffic, desktop first has been mostly deprecated. Google's algorithms also prioritize mobile-first layouts for their SEO. As such, most websites use mobile-first styling.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+Usually, the default font-size for a browser is 16px. However, this makes using rem quite difficult because the developer has to continually keep track of what rem denotes in terms of pixels. However, 62.5% of 16 equals 10. Therefore, by setting `html` to `font-size: 62.5%`, 1`rem` is equal to `10px`, thus making the styling of fonts easier.
 
 4. How would you describe preprocessing to someone new to CSS?
+Preprocessing is somewhat like adding an extra layer on top of CSS, thereby giving you additional functionality that isn't incorporated in the normal version. A preprocessor takes a slightly-different version of CSS syntax, compiles it into JavaScript (where the extra functions are built), and then translates it back to normal CSS. This way, you can do cool stuff like nesting (styling multiple elements _inside_ one another), using mix-ins (CSS functions), and variables. You can also still use bog-standard CSS in LESS files, so it's incredibly versatile.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+My favorite concept in preprocessing is the option to import other LESS files into another file. This makes the development process more organized, enabling you to style a specific module or section without having to deal with an enormous stylesheet that covers the entire site. It also negates the need for adding two dozen stylesheets into your HTML `<header>`, massively boosting performance, since all (imported) LESS files get compiled into a single LESS 'bundle' which gets served to the browser all at once.
+The concept that still gives me the most trouble are mix-ins, especially ones with arguments. While I can see the the use, expecially when styling larger websites where the same button or element might occur hundreds of times in slightly-differing scenarios, I haven't really seen the use in our previous projects just yet. Therefore, the fact that mix-ins don't 'click' might have to do with a lack of use thus far.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
