@@ -1,1 +1,31 @@
 // Mixins Here
+.radius(@size) {
+    border-radius: @size;
+}
+
+.button(@bcolor, @radius, @color) {
+    background-color: @bcolor;
+    border-radius: @radius;
+    color: @color;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    width: 100%;
+}
+.button-hover(@bcolor, @color) {
+    background-color: @color;
+    color: @bcolor;
+}
+
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
