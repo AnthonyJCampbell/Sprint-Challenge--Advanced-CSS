@@ -109,13 +109,19 @@
         height: auto;
         .radius(10px);
       }
-    }
-  }
-  @media @phone {
+    } 
+}// home
+
+@media @phone {
+  .home{
     .walk {
+      padding: 20px 0 20px 0;
+      max-width: 400px;
+      width: 100%;
       margin-top: 20px;
       flex-direction: column;
-      padding: 20px 0 20px 0;
+      align-items: center;
+      
       .walk-text {
         width: 100%;
         margin: 0 auto;
@@ -125,6 +131,7 @@
           justify-content: center;
           a {
             text-align: center;
+            display: block;
             width: 100%;
             padding: 20px 10px;
           }
@@ -136,5 +143,7 @@
         order: -2;
         margin-bottom: 20px;
       }
+    }
   }
-}// home
+  
+}

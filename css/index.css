@@ -326,26 +326,30 @@ footer {
   border-radius: 10px;
 }
 @media (max-width:500px) {
-  .walk {
+  .home .walk {
+    padding: 20px 0 20px 0;
+    max-width: 400px;
+    width: 100%;
     margin-top: 20px;
     flex-direction: column;
-    padding: 20px 0 20px 0;
+    align-items: center;
   }
-  .walk .walk-text {
+  .home .walk .walk-text {
     width: 100%;
     margin: 0 auto;
   }
-  .walk .walk-text .btn {
+  .home .walk .walk-text .btn {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  .walk .walk-text .btn a {
+  .home .walk .walk-text .btn a {
     text-align: center;
+    display: block;
     width: 100%;
     padding: 20px 10px;
   }
-  .walk .walk-img {
+  .home .walk .walk-img {
     width: 100%;
     margin: inherit auto;
     order: -2;
